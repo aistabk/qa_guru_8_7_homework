@@ -1,7 +1,7 @@
 import pytest
 import os
 import zipfile
-from utils import TMP_PATH
+from utils1 import TMP_PATH
 import shutil
 
 @pytest.fixture(scope="function", autouse=True)
