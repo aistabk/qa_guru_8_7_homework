@@ -15,10 +15,7 @@ def test_create_archive():
         for file in resource_files:
             zip_file.write(os.path.join('resources', file))
 
-       # with zipfile.ZipFile('tmp/archive.zip', 'r') as zip_file:
-       #  print(zip_file.namelist())
 
+    yield
 
-    #yield
-
-    #shutil.rmtree(TMP_PATH)
+    shutil.rmtree(TMP_PATH)
